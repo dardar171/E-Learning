@@ -62,7 +62,10 @@
                 margin-bottom: 30px;
             }
         </style>
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+=======
+>>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa
     </head>
     <body>
         <div class="flex-center position-ref full-height">

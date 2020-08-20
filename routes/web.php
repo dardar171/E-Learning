@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource("courses","CourseController");
+<<<<<<< HEAD
 Route::get("courses/{id}/lecture","CourseController@createLecture");
 Route::post("courses/{id}/lecture","CourseController@storeLecture");
+=======
+>>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa
