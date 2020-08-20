@@ -18,7 +18,7 @@ class CreateLecturesTable extends Migration
             $table->string('videoUrl');
             $table->text('body');
             $table->string('title');
-            $table->Integer('courseId');
+            $table->Integer('course_id');
             $table->timestamps();
         });
     }

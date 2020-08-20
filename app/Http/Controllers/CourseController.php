@@ -14,7 +14,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses=Course::all();
+        return view('courses.index',compact('courses'));
     }
 
     /**
@@ -24,7 +25,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('new');
+        return view('courses.create');
     }
 
     /**
@@ -39,7 +40,7 @@ class CourseController extends Controller
         $course->title=$request->input('title');
         $course->description=$request->input('description');
         $course->save();
-        return $course;
+        return redirect()->route('courses.index');
     }
 
     /**
@@ -61,7 +62,8 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        //
+        $course=Course::find($id);
+        return view('courses.update',compact('course'));
     }
 
     /**
@@ -73,7 +75,11 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $course=Course::find($id);
+        $course->title=$request->input('title');
+        $course->description=$request->input('description');
+        $course->save();
+        return redirect()->route('courses.index');
     }
 
     /**
@@ -84,6 +90,8 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $course=Course::find($id);
+        $course->delete();
+        return redirect()->route('courses.index');
     }
 }
