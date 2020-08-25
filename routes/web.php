@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get("/login",function(){
+    return view("auth/login");
+});
 
 Route::resource("courses","CourseController");
-<<<<<<< HEAD
 Route::get("courses/{id}/lecture","CourseController@createLecture");
 Route::post("courses/{id}/lecture","CourseController@storeLecture");
-=======
->>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa

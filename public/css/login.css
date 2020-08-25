@@ -1,0 +1,109 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('../images/image.png');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 330px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.3) !important;
+}
+
+.card1{
+    height: 380px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.1) !important;
+    }
+
+/* .social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+} */
+
+.card-header h3{
+color: white;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #f37507;
+color: black;
+border:0 !important;
+/* background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%); */
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+.btn_1 {
+        display: inline-block;
+        padding: 13.5px 45px;
+        border-radius: 50px;
+        font-size: 16px;
+        color: #fff;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        text-transform: capitalize;
+        background-size: 200% auto;
+        border: 1px solid transparent;
+        box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+        text-align: center;
+        margin-top: 20px;
+}
+
+.btn_1{
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+}
+
+.d-block {
+    display: block!important;
+}
+/* .btn_1:hover{
+color: black;
+background-color: white;
+} */
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.btn_1:hover {
+    color: #ffffff !important;
+    background:linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+i{
+    color:#ffffff !important;
+    text-align:center;
+}

@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Course;
-<<<<<<< HEAD
 use App\Lecture;
-=======
->>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa
 
 class CourseController extends Controller
 {
@@ -32,15 +29,12 @@ class CourseController extends Controller
         return view('courses.create');
     }
 
-<<<<<<< HEAD
     public function createLecture($id)
     {
         $course = Course::find($id);
         return view('lecture/new',compact('course'));
     }
 
-=======
->>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa
     /**
      * Store a newly created resource in storage.
      *
@@ -56,7 +50,6 @@ class CourseController extends Controller
         return redirect()->route('courses.index');
     }
 
-<<<<<<< HEAD
     public function storeLecture(Request $request,$id)
     {
         $course = Course::find($id);
@@ -68,8 +61,6 @@ class CourseController extends Controller
         //return redirect()->route('courses.show',$id);
         return "create Successfully";
     }
-=======
->>>>>>> a0c65e5b88314b07cf6b3dce360546337c873afa
     /**
      * Display the specified resource.
      *
